@@ -694,8 +694,8 @@ nav {
   color: #ffffff;
 }
 
-.portfolio-image:hover .text-back,
-.portfolio-image:focus .text-back {
+.portfolio:hover .text-back,
+.portfolio:focus .text-back {
   transform: translateY(0);
 }
 
