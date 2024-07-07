@@ -50,7 +50,7 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="section-banner-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn-banner">Order Service</button>
+          <button type="button" class="btn-banner" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- END Section HERO -->
@@ -455,8 +455,88 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-description">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                type="email"
+                name="email"
+                id="subscription"
+                placeholder="E-mail"
+                class="subscribe-input"
+              />
+            </label>
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon_send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--END  FOOTER -->
+
+    <!--START  MODAL -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="close-button">
+          <svg class="close-icon" width="11" height="11">
+            <use href="./images/icons.svg#cancel"></use>
+          </svg>
+        </button>
+
+        <b class="modal-text">Leave your contacts and we will call you back</b>
+        <form>
+          <ul class="form">
+            <li class="form-field">
+              <input class="input text" type="text" id="name" name="name" placeholder=" " />
+              <label class="text-label" for="name">Name</label>
+              <svg class="name-icon icon-hover">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+            </li>
+
+            <li class="form-field">
+              <input class="input tel" type="tel" id="phone" name="phone" placeholder=" " />
+              <label class="text-label" for="phone">Phone</label>
+              <svg class="tell-icon icon-hover">
+                <use href="./images/icons.svg#tel"></use>
+              </svg>
+            </li>
+
+            <li class="form-field">
+              <input class="input email" type="email" id="email" name="email" placeholder=" " />
+              <label class="text-label" for="email">Email</label>
+              <svg class="email-icon icon-hover">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </li>
+
+            <li class="coments-box">
+              <textarea
+                class="form-teaxtarea"
+                name="comment"
+                id="comments"
+                placeholder=" "
+              ></textarea>
+              <label class="comments" for="comments">Comment</label>
+            </li>
+          </ul>
+
+          <label class="agreement" for="checkbox">
+            <input id="checkbox" class="checkbox" type="checkbox" />
+            <span class="checkbox-icon"></span>
+            I accept the terms and conditions of the
+            <a href=""> Privacy Policy</a>
+          </label>
+        </form>
+        <button class="send-button">Send</button>
+      </div>
+    </div>
+    <!--END  MODAL -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
