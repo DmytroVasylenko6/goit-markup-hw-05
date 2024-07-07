@@ -622,6 +622,10 @@ body {
   margin-bottom: 8px;
 }
 
+.modal .form-field.agreement {
+  margin-bottom: 24px;
+}
+
 .modal .form-field.comments {
   margin-bottom: 16px;
 }
